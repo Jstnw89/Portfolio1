@@ -1,0 +1,85 @@
+.container {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  grid-template-rows: 1fr 3fr 1fr;
+  grid-gap: 1em;
+}
+
+.container>div {
+  background-color: lightgreen;
+  padding: 1em;
+}
+
+.div {
+  font-family: Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+  border: 2px solid;
+  border-radius: 20px;
+}
+
+.container>div:nth-child(odd) {
+  background-color: lightblue;
+  padding: 1em;
+}
+
+.header {
+  display: subgrid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-row: auto;
+}
+
+.header-logo{
+  /*background-image: url(https://cdn.worldvectorlogo.com/logos/udacity.svg)*/
+  grid-column: 1/2;
+  height: 50px;
+  width: 50px;
+}
+.header-name{
+  grid-column: 2/4;
+}
+.header-job-title{
+  grid-column: 2/4;
+}
+.cover-photo {
+  background-image: url(https://images5.alphacoders.com/473/thumb-1920-473154.jpg);
+  max-width: 100%;
+}
+
+.projects {}
+
+
+/*
+.header{
+  display: block;
+  width:100%;
+  height: 75px;
+  padding-bottom: 15px;
+  border-bottom: solid 5px #7d97ad;
+}
+
+.header-logo{
+  height: 75px;
+  width: 75px;
+  float: left;
+}
+
+.header-name-description{
+  text-align: right;
+  vertical-align: text-bottom;
+  font-size: 25px;
+  height: 100%;
+  position: relative;
+  float: right;
+  font-family: Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+  color: #2d3c49;
+}
+
+<!---.header-text-description{
+  text-align: right;
+  font-size: 15px;
+  height: 25px;
+  position: relative;
+  float: right;
+  font-family: Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+  color: #2d3c49;
+}-->
